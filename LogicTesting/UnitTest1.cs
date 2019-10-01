@@ -16,7 +16,7 @@ namespace ListOfUSAPresidents
             return lines;
         }
         [Test]
-        public void SampleTest()
+        public void MainConsoleConditional_InputCSVResponse_ListedPoliticalParties()
         {
             //arrange
             string input1 = "Parties";
