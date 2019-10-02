@@ -7,7 +7,11 @@ using System.IO;
 
 namespace ListOfUSAPresidents
 {
-    class Program
+    abstract class Call
+    {
+        public abstract void CallWH();
+    }
+    class Program : Call
     {
         static void Main(string[] args)
         {
@@ -28,10 +32,17 @@ namespace ListOfUSAPresidents
                 }
                 if (input == "Presidents")
                 {
-                    Console.WriteLine(string.Join("", readFile("C:/Users/PC33425/Desktop/ListOfUSAPresidents/ListOfPresidents.txt")));
+                    Program p = new Program();
+                    p.CallWH();
                 }
             } while (1 < 2);
         }
+
+        public override void CallWH()
+        {
+            Console.WriteLine(string.Join("", readFile("C:/Users/PC33425/Desktop/ListOfUSAPresidents/ListOfPresidents.txt")));
+        }
+
         public static string[] readRecord(string searchTerm, string filepath, int positionOfSearchTerm)
         {
             positionOfSearchTerm--;

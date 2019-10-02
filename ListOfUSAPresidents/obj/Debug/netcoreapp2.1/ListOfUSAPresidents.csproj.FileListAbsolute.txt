@@ -3,9 +3,9 @@ C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\bin\Debug\netco
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\bin\Debug\netcoreapp2.1\ListOfUSAPresidents.runtimeconfig.dev.json
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\bin\Debug\netcoreapp2.1\ListOfUSAPresidents.dll
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\bin\Debug\netcoreapp2.1\ListOfUSAPresidents.pdb
-C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.csprojAssemblyReference.cache
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.csproj.CoreCompileInputs.cache
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.AssemblyInfoInputs.cache
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.AssemblyInfo.cs
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.dll
 C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.pdb
+C:\Users\PC33425\Desktop\ListOfUSAPresidents\ListOfUSAPresidents\obj\Debug\netcoreapp2.1\ListOfUSAPresidents.csprojAssemblyReference.cache
