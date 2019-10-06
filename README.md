@@ -1,7 +1,9 @@
 #ConsolePresidents
-###USA Presidents data from the console with C# unit testing
 
-####Set-up:
+
+###USA Presidents data from the console with C-sharp unit testing
+
+####Set-up (expect 5 minutes for this process):
 
 1. On a Windows PC, download [Release](https://github.com/GProSoftware828/ConsolePresidents/releases) to the desktop.
 2. Rt. click and extract all, then open the Solution file in the project directory with Visual Studio (ListOfUSAPresidents.sln)
