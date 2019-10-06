@@ -7,7 +7,7 @@
 
 1. On a Windows PC, download [Release](https://github.com/GProSoftware828/ConsolePresidents/releases) to the desktop.
 2. Rt. click and extract all, then open the Solution file in the project directory with Visual Studio (ListOfUSAPresidents.sln)
-* can install a free community version of Visual Studio from the Microsoft website
+* can install a free community version of Visual Studio from the Microsoft website- this usually takes fifteen minutes.
 
 **Always open the solution file in the folder of the download- you will know it's correct if you double click and Visual
 Studio is chosen to open the file automatically.**
