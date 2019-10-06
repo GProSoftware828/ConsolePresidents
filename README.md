@@ -28,7 +28,7 @@ If the download works:
 far left and the tests will populate their response.
 2. Read through the test source code- one test confirms output formatting from the data streaming in and one test confirms
 that the correct input is used to run the data retrieval- the latter you can click 'Open additional output for this result' in
-the 'Test Detail Summary' after clicking to highlight the final nested title for the test (the test class name). This will
+the 'Test Detail Summary' after clicking the testlistings to the left in the Test Explorer pane highlight the final nested title for the test (the test class name). This will
 show you the passing output message, or the failing message if it failed (then try to find the message in the code).
 
 If the download doesn't work:
@@ -40,7 +40,7 @@ If the download doesn't work:
 up automatically, ListOfUSAPresidents). The test now references the project.
 5. Copy and paste one of the tests' source code from this repository into the unit test file in the test project you just
 created. For example, a new test calls the test file 'UnitTest1.cs'- double click that file to open it, remove the given code, 
-and copy and paste in the code from this repository under DataFormatTest -> CSVOutputTest.cs.
+and copy and paste in the code from this repository in the file DataFormatTest -> CSVOutputTest.cs.
 6. Then right click on the test project folder and click Build.
 7. Repeat this process for both tests, DataFormatTest and InputSelectionStubTest.
 8. Go to 'Test' in the top menu, -> Windows -> Text Explorer and in the Test Explorer click the green arrow to the far left to
