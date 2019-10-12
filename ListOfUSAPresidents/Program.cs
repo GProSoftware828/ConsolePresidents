@@ -22,19 +22,31 @@ namespace ListOfUSAPresidents
                 string input;
                 input = Console.ReadLine();
 
-                if (input == "Whigs" || input == "Republicans" || input == "Democrats" || input == "Democratic-Republicans" || input == "Federalists" || input == "Unaffiliated" || input == "Bull Moose Party" || input == "Progressive Party" || input == "Socialist Party" || input == "National Union Party" || input == "Green Party of the United States")
+                try
                 {
-                    Console.WriteLine(string.Join("", readRecord(input, "C:/Users/PC33425/Desktop/ListOfUSAPresidents/PoliticalPartySynopses.txt", 1)));
+                    if (input == "Whigs" || input == "Republicans" || input == "Democrats" || input == "Democratic-Republicans" || input == "Federalists" || input == "Unaffiliated" || input == "Bull Moose Party" || input == "Progressive Party" || input == "Socialist Party" || input == "National Union Party" || input == "Green Party of the United States")
+                    {
+                        Console.WriteLine(string.Join("", readRecord(input, "C:/Users/PC33425/Desktop/ListOfUSAPresidents/PoliticalPartySynopses.txt", 1)));
+                    }
+                    if (input == "Parties")
+                    {
+                        Console.WriteLine(string.Join("", readFile("C:/Users/PC33425/Desktop/ListOfUSAPresidents/PoliticalParties.txt")));
+                    }
+                    if (input == "Presidents")
+                    {
+                        Program p = new Program();
+                        p.CallWH();
+                    }
+                    else
+                    {
+                        throw new ArgumentException();
+                    }
                 }
-                if (input == "Parties")
+                catch (ArgumentException)
                 {
-                    Console.WriteLine(string.Join("", readFile("C:/Users/PC33425/Desktop/ListOfUSAPresidents/PoliticalParties.txt")));
+                    Console.WriteLine("Please enter valid option. Enter 'Parties' to see party name formatting.");
                 }
-                if (input == "Presidents")
-                {
-                    Program p = new Program();
-                    p.CallWH();
-                }
+
             } while (1 < 2);
         }
 
@@ -46,47 +58,40 @@ namespace ListOfUSAPresidents
         public static string[] readRecord(string searchTerm, string filepath, int positionOfSearchTerm)
         {
             positionOfSearchTerm--;
-            string[] recordNotFound = { "Record not found" };
+            string[] lines = System.IO.File.ReadAllLines(@filepath);
+            string[] breaker = { "Search completed" };
 
-            try
+            for (int i = 0; i < lines.Length; i++)
             {
-                string[] lines = System.IO.File.ReadAllLines(@filepath);
-
-                for (int i = 0; i < lines.Length; i++)
+                string[] fields = lines[i].Split(',');
+                if (recordMatches(searchTerm, fields, positionOfSearchTerm))
                 {
-                    string[] fields = lines[i].Split(',');
-                    if (recordMatches(searchTerm, fields, positionOfSearchTerm))
-                    {
-                        Console.WriteLine("Record found");
-                        return fields;
-                    }
+                    Console.WriteLine("Record found");
+                    return fields;
                 }
-
-                return recordNotFound;
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Search term not found.");
-                return recordNotFound;
-                throw new ApplicationException("Search term not found :", ex);
-            }
+            return breaker;
         }
 
         public static string[] readFile(string filepath)
         {
-            string[] recordNotFound = { "Record not found" };
+            string[] breaker = { "Search completed" };
 
             try
             {
                 string[] lines = System.IO.File.ReadAllLines(@filepath);
                 return lines;
+                throw new FileNotFoundException();
             }
-            catch (Exception ex)
+            catch (FileNotFoundException ex)
             {
-                Console.WriteLine("Search term not found.");
-                return recordNotFound;
-                throw new ApplicationException("Search term not found :", ex);
+                Console.WriteLine("File is not currently in our database. " + $"{ex.Message}");
             }
+            catch (Exception)
+            {
+                Console.WriteLine("Error in running search from input.");
+            }
+            return breaker;
         }
 
         public static bool recordMatches(string searchTerm, string[] record, int positionOfSearchTerm)

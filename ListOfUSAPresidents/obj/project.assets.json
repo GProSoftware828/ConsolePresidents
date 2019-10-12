@@ -740,11 +740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents\\ListOfUSAPresidents\\ListOfUSAPresidents.csproj",
+      "projectUniqueName": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents2Tests\\ListOfUSAPresidents\\ListOfUSAPresidents\\ListOfUSAPresidents.csproj",
       "projectName": "ListOfUSAPresidents",
-      "projectPath": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents\\ListOfUSAPresidents\\ListOfUSAPresidents.csproj",
+      "projectPath": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents2Tests\\ListOfUSAPresidents\\ListOfUSAPresidents\\ListOfUSAPresidents.csproj",
       "packagesPath": "C:\\Users\\PC33425\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents\\ListOfUSAPresidents\\obj\\",
+      "outputPath": "C:\\Users\\PC33425\\Desktop\\ListOfUSAPresidents2Tests\\ListOfUSAPresidents\\ListOfUSAPresidents\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
