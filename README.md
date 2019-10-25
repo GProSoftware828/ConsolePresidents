@@ -45,3 +45,4 @@ and copy and paste in the code from this repository in the file DataFormatTest -
 7. Repeat this process for both tests, DataFormatTest and InputSelectionStubTest.
 8. Go to 'Test' in the top menu, -> Windows -> Text Explorer and in the Test Explorer click the green arrow to the far left to
 run the tests.
+*In order for this to work for you when downloading, you must update the path in lines 29, 33, 55 of ConsolePresidents/ListOfUSAPresidents/Program.cs to reflect your own computer's location here: "C:/Users/PC33425/Desktop/ListOfUSAPresidents/PoliticalPartySynopses.txt" where "*/*/*/*/ListOfUSAPresidents/PoliticalPartySynopses.txt" * would be your own folder's location. One way to get location on Windows is to open up the project root directory and click to highlight the input box in the file explorer that show the current location- that will turn into your path being highlighted.
